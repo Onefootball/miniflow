@@ -63,7 +63,7 @@ airflow:
     repository: rodrigodelmonte/docker-airflow
     ##
     ## image tag
-    tag: 1.10.1
+    tag: 1.10.1-meetup-datalab08
     ##
     ## Image pull policy
     ## values: Always or IfNotPresent
