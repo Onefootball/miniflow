@@ -20,6 +20,11 @@ airflow:
   ##
   ## Extra environment variables to mount in the web, scheduler, and worker pods:
   extraEnv:
+    - name: AIRFLOW__CORE__SQL_ALCHEMY_CONN
+      valueFrom:
+        secretKeyRef:
+          name: airflow-conn
+          key: connection
   #  - name: AIRFLOW__CORE__FERNET_KEY
   #    valueFrom:
   #      secretKeyRef:
